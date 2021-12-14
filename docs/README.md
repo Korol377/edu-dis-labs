@@ -1,12 +1,3 @@
----
-home: true
-actionText: Розпочати →
-actionLink: /intro/
-
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
----
-
-
 **Виконали:** 
 
 *студенти 3-го курсу, групи ІВ-93* 

@@ -3,5 +3,5 @@
 # Telegram-scrapper
 
 Виконавці:
-#### Королевич Богдан @Buster_Keatonn
-#### Гордійчук Юрій @uie234732uw
+#### Королевич Богдан [@Buster_Keatonn](https://t.me/Buster_Keatonn)
+#### Гордійчук Юрій [@uie234732uw](https://t.me/uie234732uw)

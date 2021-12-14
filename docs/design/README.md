@@ -1,86 +1,20 @@
 # Проєктування системи
 
 
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
+### Сценарій
+       
+***НАЗВА:*** Отримати інформацію з вказаних джерел
 
-В markdown-файлі використовується опис діаграми
+***УЧАСНИКИ:*** Користувач, Telegram-бот
 
-```md
+***ПЕРЕДУМОВИ:*** Користувач хоче отримати інформацію за заданими параметрами
 
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
+***РЕЗУЛЬТАТ:*** Користувач отримав інформацію через інтерфейс телеграму
 
-@startuml
+***ВИКЛЮЧНІ СИТУАЦІЇ:***
+ - EХ.001 Технічні збої  
 
-participant Client
-
-participant SR as "Service Registry"
-
-participant Service
-
-Service -> SR : register
-SR -> SR
-SR --> Service
-...
-
-SR -> Service: heartbeat
-SR <-- Service: health
-...
-
-Client -> SR: find
-Client <-- SR: service endpoint
-Client -> Service: request
-Client <-- Service: response
-
-
-
-@enduml
-
-</center>
-```
-
-яка буде відображена наступним чином
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
-@startuml
-
-    @startuml
-
-participant Client
-
-participant SR as "Service Registry"
-
-participant Service
-
-Service -> SR : register
-SR -> SR
-SR --> Service
-...
-
-SR -> Service: heartbeat
-SR <-- Service: health
-...
-
-Client -> SR: find
-Client <-- SR: service endpoint
-Client -> Service: request
-Client <-- Service: response
-
-
-
-@enduml
-
-</center>
-
-
-
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+1. Користувач запускає Telegram-бот.
+2. Telegram-бот виконує свою задачу (можлива EХ.001).
+3. Telegram-бот видає користувачу повідомлення з потрібною інформацією.
